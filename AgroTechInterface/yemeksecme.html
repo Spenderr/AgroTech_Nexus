@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title Here</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to this combined page */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .rectangle {
+            margin: 10px;
+            padding: 20px;
+            background-color: #4caf50;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" style="text-align: left;"><img src="images/argoTechNexusLogo.png" alt="AgroTech Nexus Logo" class="logo"></a>
+        <h1>AGROTECH NEXUS</h1>
+    </header>
+
+    <div id="interact">
+        <main class="UrunlerBox">
+            <div>
+                <img src="images/biber.jpeg" alt="biber" class="Urunler" id="biber">
+                <br>
+                <span class="caption">Biber</span>
+            </div>
+            <div>
+                <img src="images/feslegen.jpeg" alt="feslegen" class="Urunler" id="feslegen">
+                <br>
+                <span class="caption">Feslegen</span>
+            </div>
+            <div>
+                <img src="images/domates.jpeg" alt="domates" class="Urunler" id="domates">
+                <br>
+                <span class="caption">Domates</span>
+            </div>
+            <div>
+                <img src="images/marul.jpeg" alt="marul" class="Urunler" id="marul">
+                <br>
+                <span class="caption">Marul</span>
+            </div>
+        </main>
+        
+        <input type="text" class="citySelect" placeholder="Enter city...">
+        <div id="enterButton"></div>
+    </div>
+
+ 
+    <div class="container">
+        <div class="rectangle">
+            <h2>Weather</h2>
+            <hr>
+            <div id="weatherRes"></div>
+        </div>
+        <div class="rectangle">
+            <h2>Result</h2>
+            <hr>
+            <div id="resultRes"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+<footer>
+    <p>&copy; 2024 AgroTech Nexus. All rights reserved.</p>
+</footer>
+
+</html>

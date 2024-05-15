@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f7; /* Light blue-green */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #4caf50; /* Green */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    display: flex; /* Add this */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between;
+}
+
+.citySelect {
+    display: inline-block;
+    width: 200px; /* Set the width as per your requirement */
+    height: 40px; /* Set the height as per your requirement */
+    border: 2px solid #ccc; /* Border color */
+    border-radius: 30px; /* Border radius to make it rounded */
+    padding: 5px 10px; /* Padding inside the box */
+    background-color: #fff; /* Background color */
+    color: #333; /* Text color */
+    font-size: 16px; /* Font size */
+    outline: none; /* Remove default focus outline */
+}
+#interact
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* White text */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1; /* Fill remaining space */
+    padding: 20px 0;
+    box-sizing: border-box; /* Include padding in the width */
+}
+.UrunlerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    background-color: #fff; /* White */
+    padding: 50px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 2.5em; /* Set font size */
+    color: #333; /* Dark grey text color */
+    margin-top: 0; /* Remove default margin */
+    margin-bottom: 20px; /* Add some space below the heading */
+    text-align: center; /* Center align the text */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+.hero p {
+    color: #555; /* Dark grey */
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4caf50; /* Green */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+footer {
+    background-color: #333; /* Dark grey */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px;
+    flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+/* Style for logo */
+.logo {
+    width: 120px; /* Set width to desired size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some space to the right of the logo */
+}
+
+.Urunler {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 2em;
+    
+    transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+.Urunler:hover {
+    height: 135px; /* Enlarge the image */
+    width: 135px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+.Urunler:hover::after {
+    content: "biber"; /* Add text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Text color */
+    font-size: 16px; /* Adjust font size */
+}
+
+
+.Urunler.selected {
+    border: 2px solid black; /* Change border color to black for selected image */
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.rectangle
+{
+    width: 40%;
+    height: 300px;
+    background-color: #333;
+    padding: 30px;
+}
+
+.item-container
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
